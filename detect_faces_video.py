@@ -23,7 +23,7 @@ args = vars(ap.parse_args())
 print("[INFO] loading model...")
 net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 
-# initialize the video stream and allow the cammera sensor to warmup
+# initialize the video stream and allow the camera sensor to warm-up
 print("[INFO] starting video stream...")
 vs = VideoStream(src=0).start()
 time.sleep(2.0)
